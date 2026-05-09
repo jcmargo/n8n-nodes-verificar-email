@@ -6,9 +6,11 @@ import {
     Icon
 } from 'n8n-workflow';
 
+// eslint-disable-next-line @n8n/community-nodes/credential-test-required
 export class VerificarEmailApi implements ICredentialType {
     name = 'verificarEmailApi';
     displayName = 'Verificar Email API';
+    testedBy = 'verificarEmail';
     icon: Icon = 'file:gmail.svg';
     // Uses the link to this tutorial as an example
     // Replace with your own docs links when building your own nodes

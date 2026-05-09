@@ -1,5 +1,5 @@
 {
-	"name": "n8n-nodes-VerificarEmail",
+	"name": "n8n-nodes-verificar-email",
 	"version": "0.1.0",
 	"description": "Verifica la valides de un correo electrónico",
 	"license": "MIT",
@@ -31,7 +31,7 @@
 		"n8nNodesApiVersion": 1,
 		"strict": true,
 		"credentials": [
-			"dist/credentials/VerificarApi.credentials.js"
+			"dist/credentials/VerificarEmailApi.credentials.js"
 		],
 		"nodes": [
 			"dist/nodes/VerificarEmail/VerificarEmail.node.js"

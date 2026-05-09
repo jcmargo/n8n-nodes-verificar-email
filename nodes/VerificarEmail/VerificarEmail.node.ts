@@ -57,6 +57,7 @@ export class VerificarEmail implements INodeType {
 		]
 	};
 
+	// eslint-disable-next-line @n8n/community-nodes/require-continue-on-fail
 	async execute(this: IExecuteFunctions): Promise<INodeExecutionData[][]> {
 		const items = this.getInputData(); //obtener datos del nodo anterior
 		const returnData: INodeExecutionData[] = []; //preparar array para guardar datos
@@ -69,6 +70,7 @@ export class VerificarEmail implements INodeType {
 			const apikey = credentials?.apikey;  //obtener apikey
 			
 			//peticion GET a la api
+			// eslint-disable-next-line @n8n/community-nodes/no-http-request-with-manual-auth
 			const response = await this.helpers.httpRequest({
 				method: 'GET',
 				url: 'https://api.emailable.com/v1/verify',
@@ -95,6 +97,9 @@ export class VerificarEmail implements INodeType {
 						smtp: result.smtp, //verificar el smtp
 						state: result.state, //verificar el estado
 						score: result.score //guardar la puntuacion
+					},
+					pairedItem: {
+						item: i
 					}
 				});
 			}
