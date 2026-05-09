@@ -1,15 +1,15 @@
 {
 	"name": "n8n-nodes-VerificarEmail",
 	"version": "0.1.0",
-	"description": "",
+	"description": "Verifica la valides de un correo electrónico",
 	"license": "MIT",
 	"homepage": "",
 	"keywords": [
 		"n8n-community-node-package"
 	],
 	"author": {
-		"name": "",
-		"email": ""
+		"name": "thanatos",
+		"email": "juancamargodatos@gmail.com"
 	},
 	"repository": {
 		"type": "git",
